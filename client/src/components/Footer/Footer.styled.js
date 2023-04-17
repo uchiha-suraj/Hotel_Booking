@@ -5,8 +5,8 @@ export const FooterSection = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #003580;
+  height: 90px;
+  background-color: #3C487B;
   color: white;
-  margin: 30px 0 0 0;
   z-index: 1;
 `;

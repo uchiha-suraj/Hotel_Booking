@@ -17,8 +17,7 @@ import {
 import { useSelector } from 'react-redux';
 
 const Hotel = () => {  
-  const hotel = useSelector((state) => state?.hotel?.data);  
-  // console.log("hotel.image", hotel.image);
+  const hotel = useSelector((state) => state?.hotel?.data); 
   return (
     <HotelSection>
       <HotelWrapper>
@@ -47,13 +46,13 @@ const Hotel = () => {
               Located in the real heart of Krakow, this property has an
               excellent location score of 9.8!
             </span>
-            <h2 style = {{fontWeight: '300'}}>
-              <b>{hotel?.price * 9}</b> (9 nights)
+            <h2 style = {{fontWeight: '500'}}>
+              ₹{hotel?.price * 9} <b>*(9 nights)</b>
             </h2>
             <button style={{
               border: 'none',
               padding: '10px 20px',
-              backgroundColor: '#0071c2',
+              backgroundColor: '#3C487B',
               color: 'white',
               fontWeight: 'bold',
               cursor: 'pointer',

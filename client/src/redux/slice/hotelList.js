@@ -3,7 +3,6 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 // Action
 export const fetchHotelList = createAsyncThunk("fetchHotelList", async () => {
   const response = await fetch("http://localhost:5000/hotels");
-  console.log("sjd#####", response);
   return response.json();
 });
 

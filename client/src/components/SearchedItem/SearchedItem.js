@@ -33,7 +33,6 @@ const SearchItem = (hotelData) => {
     }, 800);
   };
 
-  console.log("11hotelData == ", hotelData);
   return (
     <SearchItemSection>
       <SiImg

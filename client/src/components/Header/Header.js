@@ -18,25 +18,19 @@ const Header = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const data = useSelector((state) => state?.hotelList?.data);
-
-  console.log("data = ", data);
   
-
   const handleSearch = (searchId) => {
-    console.log("search----id :: ", searchId);
     dispatch(fetchHotel(searchId));
     setTimeout(() => {
       navigate("/hotel-details");
     }, 800);
     
-    console.log("Search :: ", searchId);
   };
 
   const handleFilter = (event) => {
     const searchWord = event.target.value;
     setValue(searchWord);
     const newFilter = data.filter((value) => {
-      console.log("vvvv ", value.name);
       return value.name.toLowerCase().includes(searchWord.toLowerCase());
     });
 
@@ -53,21 +47,6 @@ const Header = () => {
   return (
     <HeaderSection>
       <HeaderContainer>
-        <HeaderList>
-          <HeaderListItem>
-            <FontAwesomeIcon icon={faBed} />
-            <span><Link to="/">Home</Link></span>
-          </HeaderListItem>
-          <HeaderListItem>
-            <FontAwesomeIcon icon={faPlane} />
-            <Link to="/hotel-list">Find Hotels</Link>
-          </HeaderListItem>
-          <HeaderListItem>
-            <FontAwesomeIcon icon={faTaxi} />
-            <span>Airport taxis</span>
-          </HeaderListItem>
-        </HeaderList>
-
         <HeaderTitle>Book a FabHotel - Choose from 1000+ Budget Hotels in India</HeaderTitle>
         <HeaderSearch>
           <HeaderSearchItem>

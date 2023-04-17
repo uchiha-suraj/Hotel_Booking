@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeaderSection = styled.div`
-  background-color: #003580;
+  background-color: #3C487B;
   color: white;
   display: flex;
   justify-content: center;
@@ -12,24 +12,11 @@ export const HeaderContainer = styled.div`
   max-width: 1024px;
   margin: 20px 0px 100px 0px;
 `;
-export const HeaderList = styled.div`
-  display: flex;
-  gap: 40px;
-  margin-bottom: 50px;
-`;
-export const HeaderListItem = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border: 1px solid white;
-  padding: 10px;
-  border-radius: 20px;
-`;
 export const HeaderTitle = styled.h1`
 
 `;
 export const HeaderSearch = styled.div`
-  margin-top: 60px;
+  margin-top: 40px;
   height: 30px;
   background-color: white;
   border: 3px solid #febb02;
@@ -45,10 +32,10 @@ export const HeaderSearchItem = styled.div`
   gap: 10px;
 `;
 export const HeaderBtn = styled.button`
-  background-color: #0071c2;
+  background-color: #3C487B;
   color: white;
   height: 50px;
-  width: 90px;
+  width: 105px;
   font-weight: 500;
   font-size: 20px;
   border: none;
@@ -59,11 +46,12 @@ export const HeaderSearchInput = styled.input`
   border: none;
   outline: none;
   font-size: 20px;
-  width: 900px;
+  width: 885px;
 `;
 export const DataResult = styled.div`
-  position: fixed;
-  width: 70%;
+  position: relative;
+  display: inline-block;
+  width: 90%;
   height: 200px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
