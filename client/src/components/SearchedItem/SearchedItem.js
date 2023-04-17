@@ -22,7 +22,7 @@ import { useDispatch } from 'react-redux';
 import { fetchHotel } from '../../redux/slice/hotel';
 
 const SearchItem = (hotelData) => {
-  const {_id, name, location, description, image, price} = hotelData.hotelData;
+  const {_id, name, location, description, image, price} = hotelData?.hotelData;
   const dispatch = useDispatch();
   const navigate = useNavigate();
 

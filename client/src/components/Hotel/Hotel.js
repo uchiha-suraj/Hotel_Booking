@@ -17,27 +17,28 @@ import {
 import { useSelector } from 'react-redux';
 
 const Hotel = () => {  
-  const hotel = useSelector((state) => state.hotel.data);  
+  const hotel = useSelector((state) => state?.hotel?.data);  
+  // console.log("hotel.image", hotel.image);
   return (
     <HotelSection>
       <HotelWrapper>
-        <img src = {hotel.image} alt="" style={{borderRadius: "5px", objectFit: "cover", height: "200px"}} />
-        <HotelTitle>{hotel.name}</HotelTitle>
+        <img src = {hotel?.image} alt="" style={{borderRadius: "5px", objectFit: "cover", height: "200px"}} />
+        <HotelTitle>{hotel?.name}</HotelTitle>
         <HotelAddress>
           <FontAwesomeIcon icon={faLocationDot} />
-          <span>{hotel.location}</span>
+          <span>{hotel?.location}</span>
         </HotelAddress>
         <HotelDistance>
           Excellent location – 500m from center
         </HotelDistance>
         <HotelPriceHighlight>
-          Book a stay over {hotel.price} rupees at this property and get a free airport taxi
+          Book a stay over {hotel?.price} rupees at this property and get a free airport taxi
         </HotelPriceHighlight>
         <HotelDetails>
           <HotelDetailsTexts>
             <h1 style = {{fontSize: '24px'}}>Stay in the heart of City</h1>
             <p style = {{fontSize: '14px', marginTop: '20px'}}>
-              {hotel.description}
+              {hotel?.description}
             </p>
           </HotelDetailsTexts>
           <HotelDetailsPrice>
@@ -47,7 +48,7 @@ const Hotel = () => {
               excellent location score of 9.8!
             </span>
             <h2 style = {{fontWeight: '300'}}>
-              <b>{hotel.price * 9}</b> (9 nights)
+              <b>{hotel?.price * 9}</b> (9 nights)
             </h2>
             <button style={{
               border: 'none',
