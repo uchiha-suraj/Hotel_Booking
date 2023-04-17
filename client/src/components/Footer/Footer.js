@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <FooterSection>
       <h3 style = {{marginButton: "-90px"}}>fabHOTELS Assignment</h3>
-      <p>Created by - Suraj</p>
+      <p>Created by - Suraj ✨</p>
     </FooterSection>
   )
 }
