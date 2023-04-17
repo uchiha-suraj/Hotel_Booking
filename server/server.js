@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+require('dotenv').config();
 const Hotel = require('./models/hotelModel');
 const app = express();
 
@@ -70,11 +71,11 @@ app.delete('/hotels/:id', async (req, res) => {
 })
 
 mongoose
-  .connect('mongodb+srv://admin:12345admin@cluster0.atzw2rf.mongodb.net/Node-API?retryWrites=true&w=majority')
+  .connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.atzw2rf.mongodb.net/Node-API?retryWrites=true&w=majority`)
   .then(() => {
     console.log('connected to MongoDB');
     app.listen(5000, () => {
-      console.log("Node api app is running on port 5000");
+      console.log(`Node api app is running on port ${process.env.DB_PORT}`);
     })
   })
   .catch((err) => {
