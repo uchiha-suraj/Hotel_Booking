@@ -17,6 +17,7 @@ export const NavContainer = styled.div`
 export const Logo = styled.span`
   font-weight: 500;
   font-size: 30px;
+  cursor: pointer;
 `;
 export const NavItems = styled.div`
 

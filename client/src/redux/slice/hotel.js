@@ -2,7 +2,8 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 // Action
 export const fetchHotel = createAsyncThunk("fetchHotel", async (_id) => {
-  const response = await fetch(`http://localhost:5000/hotels/${_id}`);
+  // LOCAL: http://localhost:5000/hotels/${_id}
+  const response = await fetch(`https://hotel-booking-8zdc.onrender.com/hotels/${_id}`);
   return response.json();
 });
 
