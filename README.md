@@ -2,15 +2,15 @@
 
 ## Features:
 ```
-1. Autosuggest input Feature fetching data from Backend.
-2. Redux Toolkit for data management.
+1. Autosuggest input Feature, fetching data from Backend.
+2. Redux Toolkit for state management.
 3. Node Js for backend development of the required APIs.
-4. SSR ((Server Side Rendered)* enabled.
+4. SSR (Server Side Rendered)* enabled.
 5. typescript for type checking.
 6. Webpack to bundle and run the code.
 7. Used functional programming concepts.
 8. styled-components to organize the CSS.
-9. used render to host the Backend on server.
+9. used render to host the Backend.
 ```
 ## Setup Process:
 
