@@ -10,3 +10,7 @@ export const FooterSection = styled.div`
   color: white;
   z-index: 1;
 `;
+
+export const FooterSectionHeader = styled.h3`
+  marginButton: "-90px";
+`;

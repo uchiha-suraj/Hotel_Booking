@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 // Action

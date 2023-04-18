@@ -17,7 +17,7 @@ import {
 import { useSelector } from 'react-redux';
 
 const Hotel = () => {  
-  const hotel = useSelector((state) => state?.hotel?.data); 
+  const hotel = useSelector((state: any) => state?.hotel?.data); 
   return (
     <HotelSection>
       <HotelWrapper>

@@ -1,7 +1,8 @@
+// @ts-nocheck
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 // Action
-export const fetchHotel = createAsyncThunk("fetchHotel", async (_id) => {
+export const fetchHotel = createAsyncThunk("fetchHotel", async (_id: any) => {
   // LOCAL: http://localhost:5000/hotels/${_id}
   const response = await fetch(`https://hotel-booking-8zdc.onrender.com/hotels/${_id}`);
   return response.json();
@@ -26,7 +27,7 @@ const hotelSlice = createSlice({
       console.log("Error", action.payload);
       state.isError = true;
     });
-  }
+  },
 });
 
 export default hotelSlice.reducer;

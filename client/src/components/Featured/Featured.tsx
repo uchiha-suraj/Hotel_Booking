@@ -31,7 +31,7 @@ const Featured = () => {
         return (
           <FeaturedItem 
             key = {index} 
-            onClick={(e) => {dispatch(hotelsByCity(city.name)); navigate("/hotel-list")}}
+            onClick={() => {dispatch(hotelsByCity(city.name)); navigate("/hotel-list")}}
             >
             <FeaturedImg
               src={city.image}

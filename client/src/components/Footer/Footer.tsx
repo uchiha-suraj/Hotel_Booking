@@ -1,10 +1,10 @@
 import React from 'react'
-import {FooterSection} from './Footer.styled';
+import {FooterSection, FooterSectionHeader} from './Footer.styled';
 
 const Footer = () => {
   return (
     <FooterSection>
-      <h3 style = {{marginButton: "-90px"}}>fabHOTELS Assignment</h3>
+      <FooterSectionHeader>fabHOTELS Assignment</FooterSectionHeader>
       <p>Created by - Suraj ✨</p>
     </FooterSection>
   )

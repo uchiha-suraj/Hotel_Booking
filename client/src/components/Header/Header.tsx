@@ -5,32 +5,33 @@ import {
   faTaxi,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { HeaderSection, HeaderContainer, HeaderList, HeaderListItem, HeaderTitle, HeaderSearch, HeaderSearchItem, HeaderBtn, HeaderSearchInput, DataResult, DataItem } from './Header.styled';
+import { HeaderSection, HeaderContainer, HeaderTitle, HeaderSearch, HeaderSearchItem, HeaderBtn, HeaderSearchInput, DataResult, DataItem } from './Header.styled';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchHotelList } from '../../redux/slice/hotelList';
 import { fetchHotel } from '../../redux/slice/hotel';
+import {ThunkDispatch} from "@reduxjs/toolkit";
 
 const Header = () => {
   const [value, setValue] = useState("");
   const [sid, setSid] = useState();
   const [filteredData, setFilteredData] = useState([]);
   const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const data = useSelector((state) => state?.hotelList?.data);
+  const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
+  const data = useSelector((state: any) => state?.hotelList?.data);
   
-  const handleSearch = (searchId) => {
+  const handleSearch = (searchId: any) => {
     dispatch(fetchHotel(searchId));
     setTimeout(() => {
       navigate("/hotel-details");
-    }, 800);
+    }, 500);
     
   };
 
-  const handleFilter = (event) => {
+  const handleFilter = (event: { target: { value: any; }; }) => {
     const searchWord = event.target.value;
     setValue(searchWord);
-    const newFilter = data.filter((value) => {
+    const newFilter = data.filter((value: { name: string; }) => {
       return value.name.toLowerCase().includes(searchWord.toLowerCase());
     });
 
@@ -66,7 +67,7 @@ const Header = () => {
         </HeaderSearch>
         {filteredData.length != 0 && (
           <DataResult>
-            {filteredData.slice(0, 15).map((value, key) => {
+            {filteredData.slice(0, 15).map((value: any, key: any) => {
               return (
                 <DataItem key={key} onClick={() => {setValue(value.name); setSid(value._id);}}>
                   <p style = {{marginLeft: '10px', fontSize: '20px'}}>{value.name}</p>

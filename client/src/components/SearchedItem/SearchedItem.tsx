@@ -20,17 +20,27 @@ import {
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { fetchHotel } from '../../redux/slice/hotel';
+import {ThunkDispatch} from "@reduxjs/toolkit";
 
-const SearchItem = (hotelData) => {
+interface Props {
+  hotelData: { 
+    _id: any; 
+    name: string; location: string; 
+    description: string; 
+    image: any; 
+    price: number; 
+  };
+}
+const SearchItem = (hotelData: Props) => {
   const {_id, name, location, description, image, price} = hotelData?.hotelData;
-  const dispatch = useDispatch();
+  const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
   const navigate = useNavigate();
 
   const handleHotel = () => {
     dispatch(fetchHotel(_id));
     setTimeout(() => {
       navigate("/hotel-details");
-    }, 800);
+    }, 500);
   };
 
   return (
