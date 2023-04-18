@@ -32,4 +32,5 @@
 2. `npx ts-node server.tsx` to start the server on localhost:8080.
 
 *note: `Vercel do not allow Server Side Rendering for React Application, Please Do manual setup to check the SSR`.
+<br/>
 *note: `Backend is already deployed on render, Database environment setup is not required`.
