@@ -18,6 +18,7 @@
 7. Used functional programming concepts.
 8. styled-components to organize the CSS.
 9. used render to host the Backend.
+10. used vercel to host the Frontend.
 ```
 ## Setup Process:
 
@@ -29,4 +30,5 @@
 1. `npm run build` to make the build folder.
 2. `npx ts-node server.tsx` to start the server on localhost:8080.
 
+*note: `Vercel do not allow Server Side Rendering for React Application, Please Do manual setup to check the SSR`.
 *note: `Backend is already deployed on render, Database environment setup is not required`.
