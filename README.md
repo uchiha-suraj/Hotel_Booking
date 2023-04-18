@@ -1,5 +1,7 @@
 # Fabhotels Assignment
 
+![music-player-app](https://user-images.githubusercontent.com/46050946/232693874-257c0c3e-af5c-4637-b4b2-ff563ce829ea.png)
+
 ## Features:
 ```
 1. Autosuggest input Feature, fetching data from Backend.
