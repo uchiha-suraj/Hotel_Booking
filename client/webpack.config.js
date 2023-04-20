@@ -35,6 +35,10 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin({
+    // template: "./src/index.tsx",
+    // inject: true,
+    // title: "Link's Journal"
+  })],
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
 }

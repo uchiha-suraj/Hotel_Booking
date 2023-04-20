@@ -1,6 +1,6 @@
 # Fabhotels Assignment
 
-![music-player-app](https://user-images.githubusercontent.com/46050946/232693874-257c0c3e-af5c-4637-b4b2-ff563ce829ea.png)
+![fabhotels](https://user-images.githubusercontent.com/46050946/232693874-257c0c3e-af5c-4637-b4b2-ff563ce829ea.png)
 
 ## Features:
 ```
@@ -22,6 +22,6 @@
 
 ### check the SSR:
 1. `npm run build` to make the build folder.
-2. `npx ts-node server.tsx` to start the server on localhost:8080.
+2. `npm run ssr` to start the server on localhost:8080.
 
 *note: `Backend is already deployed on render, Database environment setup is not required`.

@@ -30,7 +30,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "serve": "webpack serve --mode development",
-    "wpbuild": "webpack --mode production"
+    "wpbuild": "webpack --mode production",
+    "ssr": "npx ts-node server.tsx"
   },
   "eslintConfig": {
     "extends": [
