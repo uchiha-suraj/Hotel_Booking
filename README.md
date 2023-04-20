@@ -1,6 +1,14 @@
 # Fabhotels Assignment
+### see the project [here](https://assignment-beta-opal.vercel.app/).
 
 ![fabhotels](https://user-images.githubusercontent.com/46050946/232693874-257c0c3e-af5c-4637-b4b2-ff563ce829ea.png)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/46050946/232693874-257c0c3e-af5c-4637-b4b2-ff563ce829ea.png" alt="Your image title" width="70%"/>
+  <img src="https://user-images.githubusercontent.com/46050946/232698954-a2b764b5-d093-4dfb-aa8c-1660e96daf51.png" alt="Your image title" width="70%"/>
+  <img src="https://user-images.githubusercontent.com/46050946/232699039-ffc5272e-d582-4127-a80f-b3b4afb8ceda.png" alt="Your image title" width="70%"/>
+</p>
+<br/>
 
 ## Features:
 ```
@@ -13,6 +21,7 @@
 7. Used functional programming concepts.
 8. styled-components to organize the CSS.
 9. used render to host the Backend.
+10. used vercel to host the Frontend.
 ```
 ## Setup Process:
 
@@ -24,4 +33,6 @@
 1. `npm run build` to make the build folder.
 2. `npm run ssr` to start the server on localhost:8080.
 
+*note: `Vercel do not allow Server Side Rendering for React Application, Please Do manual setup to check the SSR`.
+<br/>
 *note: `Backend is already deployed on render, Database environment setup is not required`.
