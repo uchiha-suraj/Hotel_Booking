@@ -42,9 +42,6 @@ const Header = () => {
     }
   };
 
-  useEffect(() => {
-    dispatch(fetchHotelList());
-  }, [])
   return (
     <HeaderSection>
       <HeaderContainer>

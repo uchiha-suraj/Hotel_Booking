@@ -4,10 +4,10 @@ import Featured from '../components/Featured/Featured'
 
 const Home = () => {
   return (
-    <div style={{}}>
+    <>
       <Header />
       <Featured />
-    </div>
+    </>
   )
 }
 

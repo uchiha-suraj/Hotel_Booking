@@ -3,9 +3,9 @@ import Hotel from '../components/Hotel/Hotel'
 
 const HotelDetails = () => {
   return (
-    <div>
+    <>
       <Hotel />
-    </div>
+    </>
   )
 }
 
