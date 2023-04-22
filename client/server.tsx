@@ -10,7 +10,7 @@ import App from './src/App';
 
 const app = express();
 
-app.use(express.static('./build', { index: false }));
+app.use(express.static('./dist', { index: false }));
 
 app.get('/*', (req, res) => {
   const sheet = new ServerStyleSheet();
@@ -23,15 +23,15 @@ app.get('/*', (req, res) => {
     )
   );
 
-  const templateFile = path.resolve('./build/index.html');
+  const templateFile = path.resolve('./dist/index.html');
   fs.readFile(templateFile, 'utf8', (err, data) => {
     if (err) {
       return res.status(500).send(err);
     }
 
     return res.send(
-      data.replace('<noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div>', `<div id="root">${reactApp}</div>`)
-      .replace('<style></style>', sheet.getStyleTags())
+      data.replace('<body></body>', `<body><div id="root">${reactApp}</div></body>`)
+      .replace('<title>Webpack App</title>', `<title>fabHotels</title>${sheet.getStyleTags()}`)
     );
   })
 
