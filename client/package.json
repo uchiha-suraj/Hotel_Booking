@@ -27,11 +27,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "test": "react-scripts test",
+    "start": "npx ts-node server.tsx",
     "serve": "webpack serve --mode development",
-    "build": "webpack --mode production",
-    "ssr": "npx ts-node server.tsx"
+    "build": "webpack --mode production"
   },
   "eslintConfig": {
     "extends": [
