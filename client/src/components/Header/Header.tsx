@@ -1,10 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import {
-  faBed,
-  faPlane,
-  faTaxi,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { HeaderSection, HeaderContainer, HeaderTitle, HeaderSearch, HeaderSearchItem, HeaderBtn, HeaderSearchInput, DataResult, DataItem } from './Header.styled';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -48,7 +42,6 @@ const Header = () => {
         <HeaderTitle>Book a FabHotel - Choose from 1000+ Budget Hotels in India</HeaderTitle>
         <HeaderSearch>
           <HeaderSearchItem>
-            <FontAwesomeIcon icon={faBed} className="headerIcon" />
             <HeaderSearchInput
               type="text"
               value={value}
