@@ -1,5 +1,4 @@
 # Fabhotels Assignment
-### see the project [here](https://assignment-beta-opal.vercel.app/).
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/46050946/232693874-257c0c3e-af5c-4637-b4b2-ff563ce829ea.png" alt="Your image title" width="70%"/>
