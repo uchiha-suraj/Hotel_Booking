@@ -23,12 +23,8 @@
 ## Setup Process:
 
 1. First `git clone` the repository.
-2. `npm install` to install the Dependency.
-3. `npm start` to start the application on localhost:3000.
-
-### check the SSR:
-1. `npm run build` to make the build folder.
-2. `npm run ssr` to start the server on localhost:8080.
+2. `npm run build` to make the build folder.
+3. `npm start` to start the server on localhost:8080.
 
 *note: `Vercel do not allow Server Side Rendering for React Application, Please Do manual setup to check the SSR`.
 <br/>
