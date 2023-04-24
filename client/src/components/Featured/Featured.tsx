@@ -4,6 +4,8 @@ import {FeaturedSection, FeaturedItem, FeaturedTitles, FeaturedImg} from './Feat
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { hotelsByCity } from '../../redux/actions';
+import { fetchHotelList } from '../../redux/slice/hotelList';
+import {ThunkDispatch} from "@reduxjs/toolkit";
 
 const cities = [
   {
@@ -56,7 +58,7 @@ const settings = {
 
 const Featured = () => {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
+  const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
   return (
     <FeaturedSection>
       <Slider {...settings}>
@@ -64,7 +66,7 @@ const Featured = () => {
         return (
           <FeaturedItem 
             key = {index} 
-            onClick={() => {dispatch(hotelsByCity(city.name)); navigate("/hotel-list")}}
+            onClick={() => {dispatch(fetchHotelList()); dispatch(hotelsByCity(city.name)); navigate("/hotel-list")}}
             >
             <FeaturedImg
               src={city.image}
