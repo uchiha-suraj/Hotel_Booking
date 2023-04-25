@@ -1,9 +1,9 @@
 # Fabhotels Assignment
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/46050946/232693874-257c0c3e-af5c-4637-b4b2-ff563ce829ea.png" alt="Your image title" width="70%"/>
-  <img src="https://user-images.githubusercontent.com/46050946/232698954-a2b764b5-d093-4dfb-aa8c-1660e96daf51.png" alt="Your image title" width="70%"/>
-  <img src="https://user-images.githubusercontent.com/46050946/232699039-ffc5272e-d582-4127-a80f-b3b4afb8ceda.png" alt="Your image title" width="70%"/>
+  <img src="https://user-images.githubusercontent.com/46050946/234177427-2d1993bd-a39a-4b97-bdee-3a16723859fa.png" alt="Your image title" width="70%"/>
+  <img src="https://user-images.githubusercontent.com/46050946/234177496-f5c2ab14-facb-4e9d-befe-1686a90eb3c7.png" alt="Your image title" width="70%"/>
+  <img src="https://user-images.githubusercontent.com/46050946/234177551-613a99b0-bc9b-4fa8-a604-a8193625cecf.png" alt="Your image title" width="70%"/>
 </p>
 <br/>
 
