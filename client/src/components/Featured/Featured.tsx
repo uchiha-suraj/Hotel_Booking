@@ -66,7 +66,7 @@ const Featured = () => {
         return (
           <FeaturedItem 
             key = {index} 
-            onClick={() => {dispatch(fetchHotelList()); dispatch(hotelsByCity(city.name)); navigate("/hotel-list")}}
+            onClick={() => {dispatch(hotelsByCity(city.name)); navigate("/hotel-list")}}
             >
             <FeaturedImg
               src={city.image}
