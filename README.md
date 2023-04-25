@@ -28,7 +28,7 @@
 
 ### to run it on server side:
 4. `npm run build` to make the dist folder.
-5. `npm start` to start the server on localhost:8080.
+5. `npm run ssr` to start the server on localhost:8080.
 
 *note: `Vercel do not allow Server Side Rendering for React Application, Please Do manual setup to check the SSR`.
 <br/>
