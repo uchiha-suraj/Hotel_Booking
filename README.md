@@ -1,4 +1,4 @@
-# Fabhotels Assignment
+# Fabhotels Hotel Booking
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/46050946/234177427-2d1993bd-a39a-4b97-bdee-3a16723859fa.png" alt="Your image title" width="70%"/>
